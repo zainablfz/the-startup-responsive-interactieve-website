@@ -1,19 +1,20 @@
 :root {
-  --yellow: #ffc400;
-  --font-color: #ffffff;
-  --primary-bg-color: #181a23;
-  --primary-blog-color: #212431;
-  --secondary-blog-color: #1d1f2a;
+  --primaryColor: #ffc400;
+  --secundaryColor: #181a23;
+  --tertiaryColor: #ebdbff;
+  --white: #ffffff;
+  --black: #161617;
 }
+
 * {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
 nav {
-  background-color: var(--yellow);
+  background-color: var(--primaryColor);
   display: flexbox;
-  height: 7em;
+  height: 8em;
 }
 nav h1 {
   font-weight: bold;
@@ -22,26 +23,25 @@ nav h1 {
 }
 nav ul {
   padding: 0.5em;
-  padding-top: 1em;
+  padding-top: 0.2em;
   translate: 0 1em;
 }
 nav ul li {
   display: inline;
   padding-left: 10px;
-  display: flexbox;
 }
 
 .opties {
   width: 100%;
   text-align: center;
-  padding-top: 6.25em;
-  background-color: var(--primary-blog-color);
+  padding-top: 4.25em;
+  background-color: var(--secundaryColor);
 }
 
 h1 {
   font-size: 36px;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--white);
 }
 
 p {
@@ -59,7 +59,7 @@ p {
 
 .opties-col {
   flex-basis: 31%;
-  background: #ebdbff;
+  background: var(--tertiaryColor);
   border-radius: 10px;
   margin: 1.7em;
   margin-bottom: 5%;
@@ -72,7 +72,7 @@ p {
 h3 {
   text-align: center;
   font-weight: 600;
-  margin: 10px 0;
+  margin: 0.2em 0;
 }
 
 .opties-col:hover {
@@ -87,15 +87,15 @@ h3 {
 
   .opties-col {
     flex-basis: 100%;
-    margin-bottom: 3%;
+    margin-bottom: 1em;
   }
 }
 
 footer {
-  background-color: var(--primary-blog-color);
+  background-color: var(--secundaryColor);
 }
 footer p {
   padding: 1em;
   font-size: 14px;
-  color: var(--yellow);
+  color: var(--primaryColor);
 }
