@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -31,6 +32,18 @@
     </header>
 
     <main>
+      <!-- <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul> -->
       <section class="timeline">
         <article class="container left-container">
           <img src="assets/grrr.png" />
@@ -43,7 +56,7 @@
               temporibus quaerat id reprehenderit quia qui iusto recusandae et
               nostrum quisquam ut pariatur iusto sed possimus quae.
             </p>
-            <button>Lees meer</button>
+            <button class="btn btn-open">Lees meer</button>
             <span class="left-container-arrow"></span>
           </div>
         </article>
@@ -59,7 +72,7 @@
               temporibus quaerat id reprehenderit quia qui iusto recusandae et
               nostrum quisquam ut pariatur iusto sed possimus quae.
             </p>
-            <button>Lees meer</button>
+            <button class="btn btn-open">Lees meer</button>
             <span class="right-container-arrow"></span>
           </div>
         </article>
@@ -75,7 +88,7 @@
               temporibus quaerat id reprehenderit quia qui iusto recusandae et
               nostrum quisquam ut pariatur iusto sed possimus quae.
             </p>
-            <button>Lees meer</button>
+            <button class="btn btn-open">Lees meer</button>
             <span class="left-container-arrow"></span>
           </div>
         </article>
@@ -91,7 +104,7 @@
               temporibus quaerat id reprehenderit quia qui iusto recusandae et
               nostrum quisquam ut pariatur iusto sed possimus quae.
             </p>
-            <button>Lees meer</button>
+            <button class="btn btn-open">Lees meer</button>
             <span class="right-container-arrow"></span>
           </div>
         </article>
@@ -107,7 +120,7 @@
               temporibus quaerat id reprehenderit quia qui iusto recusandae et
               nostrum quisquam ut pariatur iusto sed possimus quae.
             </p>
-            <button>Lees meer</button>
+            <button class="btn btn-open">Lees meer</button>
             <span class="left-container-arrow"></span>
           </div>
         </article>
@@ -123,24 +136,43 @@
               temporibus quaerat id reprehenderit quia qui iusto recusandae et
               nostrum quisquam ut pariatur iusto sed possimus quae.
             </p>
-            <button>Lees meer</button>
+            <button class="btn btn-open">Lees meer</button>
             <span class="right-container-arrow"></span>
           </div>
+        </article>
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </section>
+
+      <section class="popup">
+        <article class="modal hidden">
+          <div class="flex">
+            <img src="assets/grrr.png" width="50px" height="50px" alt="user" />
+            <button class="btn-close">⨉</button>
+          </div>
+          <div>
+            <h3>Meer info ofzo</h3>
+            <p>
+              Hoi ik probeer dit met javascript. ik weet niet of dit gaat werken
+              maar kan altijd proberen oke doei.
+            </p>
+          </div>
+
+          <input type="email" id="email" placeholder="test123@js.com" />
+          <button class="btn">Submit</button>
         </article>
       </section>
+      <div class="overlay hidden"></div>
     </main>
-
-    <ul class="circles">
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
   </body>
 </html>
