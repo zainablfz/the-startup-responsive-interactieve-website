@@ -14,7 +14,7 @@
 }
 body {
   background: #2e364a;
-  position: relative;
+  /* position: relative; */
 }
 
 /* Styling header (nav) */
@@ -116,7 +116,7 @@ nav ul li a {
 .btn-open {
   cursor: pointer;
   padding: 0.5rem 1.25rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   text-align: center;
   border-radius: 6.25rem;
 }
