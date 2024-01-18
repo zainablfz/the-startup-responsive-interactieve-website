@@ -20,28 +20,48 @@ body {
 /* Styling header (nav) */
 
 nav {
-  background-color: var(--secundaryColor);
-  display: flexbox;
-  height: 8em;
-}
-nav h1 {
-  font-weight: bold;
-  translate: 0.5em 0.5em;
-  font-size: 2em;
-  color: var(--tertiaryColor);
-}
-nav ul {
-  padding: 0.5em;
-  padding-top: 0.2em;
-  translate: 0 1em;
   display: flex;
-  justify-content: flex-end;
-  list-style-type: none;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--secundaryColor);
 }
-nav ul li a {
-  display: inline;
-  padding-left: 10px;
-  color: var(--white);
+
+nav img {
+  width: 8em;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  position: relative;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--tertiaryColor);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
 }
 
 /* Styling timeline */
@@ -118,7 +138,7 @@ nav ul li a {
   padding: 0.5rem 1.25rem;
   margin-top: 1rem;
   text-align: center;
-  border-radius: 6.25rem;
+  /* border-radius: 6.25rem; */
 }
 
 .left-container {
@@ -185,18 +205,6 @@ nav ul li a {
   border-right: 15px solid var(--tertiaryColor);
   left: -15px;
 }
-
-/* .right-container-arrow {
-  height: 0;
-  width: 0;
-  position: absolute;
-  top: 28px;
-  z-index: 1;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  border-right: 15px solid var(--tertiaryColor);
-  left: -15px;
-} */
 
 /* Media Query */
 
@@ -378,7 +386,7 @@ nav ul li a {
   flex-direction: column;
   justify-content: center;
   gap: 0.4rem;
-  width: 450px;
+  width: 400px;
   padding: 1.3rem;
   min-height: 250px;
   position: absolute;
@@ -410,11 +418,12 @@ nav ul li a {
 
 .btn {
   display: inline-block;
+  margin-top: 1rem;
   padding: 0.8rem 1.4rem;
   font-weight: 700;
   background-color: black;
   color: white;
-  /* border-radius: 5px; */
+  border-radius: 6.25rem;
   text-align: center;
   font-size: 1em;
   cursor: pointer;
@@ -423,6 +432,8 @@ nav ul li a {
 .btn-open {
   /* position: absolute; */
   bottom: 150px;
+  background-color: var(--tertiaryColor);
+  color: var(--black);
 }
 
 .btn-close {
