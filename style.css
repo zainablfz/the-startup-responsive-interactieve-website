@@ -183,11 +183,7 @@ nav img {
   .timeline::after {
     left: 50%;
   }
-  /* .container {
-    width: 100%;
-    padding-left: 80px;
-    padding-right: 25px;
-  } */
+
   .container {
     width: 50%;
     padding: 10px 50px;
@@ -202,7 +198,7 @@ nav img {
   }
 
   .left-container img {
-    left: -10px;
+    left: 580px;
     right: -20px;
   }
 
@@ -345,7 +341,8 @@ nav img {
   justify-content: center;
 }
 
-.modal {
+.modal,
+.confirmed {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -361,7 +358,8 @@ nav img {
   z-index: 2;
 }
 
-.modal .flex {
+.modal .flex,
+.confirmed .flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -374,7 +372,8 @@ nav img {
   font-size: 0.9em;
 }
 
-.modal p {
+.modal p,
+.confirmed p {
   font-size: 0.9rem;
   color: #777;
   margin: 0.4rem 0 0.2rem;
@@ -424,20 +423,22 @@ nav img {
   display: none;
 }
 
-@media screen and (min-width: 565px) {
+@media screen and (min-width: 890px) {
   .modal {
-    width: 500px;
+    width: 550px;
   }
-}
 
-@media screen and (min-width: 565px) {
-  .modal {
+  .confirmed {
     width: 550px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 600px;
+    width: 650px;
+  }
+
+  .confirmed {
+    width: 650px;
   }
 }
