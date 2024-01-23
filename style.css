@@ -31,6 +31,10 @@ nav img {
   width: 8em;
 }
 
+h1 {
+  color: var(--primaryColor);
+}
+
 /* Styling timeline */
 
 .visually-hidden {
