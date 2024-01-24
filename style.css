@@ -32,7 +32,7 @@ nav img {
 }
 
 h1 {
-  color: var(--primaryColor);
+  color: var(--tertiaryColor);
 }
 
 /* Styling timeline */
@@ -183,9 +183,14 @@ h1 {
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-right: 15px solid var(--tertiaryColor);
+}
+.right-container-arrow {
   left: -15px;
 }
 
+.left-container-arrow {
+  rotate: 180deg;
+}
 /* Media Query */
 
 @media screen and (min-width: 565px) {
