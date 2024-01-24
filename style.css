@@ -1,3 +1,33 @@
+/* Font import */
+
+@font-face {
+  font-family: Suisse Int;
+  src: url(lettertypes/SuisseIntl-Light-WebS.woff2) format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Suisse Int;
+  src: url(lettertypes/SuisseIntl-Regular-WebS.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Suisse Int;
+  src: url(lettertypes/SuisseIntl-Medium-WebS.woff2) format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Bw Gradual;
+  src: url(lettertypes/BwGradual-ExtraBold.woff2) format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
 :root {
   --primaryColor: #ffc400;
   --secundaryColor: #181a23;
@@ -32,7 +62,25 @@ nav img {
 }
 
 h1 {
+  padding: 2em;
+  margin: 2em;
+  text-align: center;
+  background-color: var(--secundaryColor);
   color: var(--tertiaryColor);
+  font-size: 25px;
+  font-family: Bw Gradual;
+}
+
+@media screen and (min-width: 890px) {
+  h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 35px;
+  }
 }
 
 /* Styling timeline */
@@ -165,12 +213,14 @@ h1 {
 }
 
 .text-box h2 {
-  font-weight: 600;
+  font-family: Bw Gradual;
+  font-weight: 800;
 }
 
 .text-box small {
   display: inline-block;
   margin-bottom: 15px;
+  font-family: Suisse Int;
 }
 
 .left-container-arrow,
@@ -185,12 +235,6 @@ h1 {
   border-right: 15px solid var(--tertiaryColor);
   left: 0;
   transform: translateX(-100%);
-}
-
-.left-container-arrow {
-}
-
-.right-container-arrow {
 }
 
 /* Media Query */
@@ -458,4 +502,8 @@ h1 {
   .confirmed {
     width: 650px;
   }
+}
+
+footer {
+  background: white;
 }
