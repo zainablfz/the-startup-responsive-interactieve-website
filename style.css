@@ -183,14 +183,16 @@ h1 {
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
   border-right: 15px solid var(--tertiaryColor);
-}
-.right-container-arrow {
-  left: -15px;
+  left: 0;
+  transform: translateX(-100%);
 }
 
 .left-container-arrow {
-  rotate: 180deg;
 }
+
+.right-container-arrow {
+}
+
 /* Media Query */
 
 @media screen and (min-width: 565px) {
@@ -226,13 +228,10 @@ h1 {
 
   .left-container-arrow {
     border-left: 15px solid var(--tertiaryColor);
-    right: -15px;
-  }
-
-  .right-container-arrow {
-    border-right: 15px solid var(--tertiaryColor);
-    border-left: 0;
-    left: -15px;
+    border-right-color: transparent;
+    right: 0;
+    left: auto;
+    transform: translateX(100%);
   }
 }
 
