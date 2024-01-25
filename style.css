@@ -32,6 +32,7 @@
   --primaryColor: #ffc400;
   --secundaryColor: #181a23;
   --tertiaryColor: #ebdbff;
+  --lightgreen: #eef0e9;
   --white: #ffffff;
   --black: #161617;
 }
@@ -300,9 +301,9 @@ h1 {
   background-color: #ff3cac;
   background-image: linear-gradient(
     225deg,
-    #ff3cac 0%,
-    #784ba0 50%,
-    #2b86c5 100%
+    var(--tertiaryColor) 0%,
+    var(--lightgreen) 50%,
+    var(--lightgreen) 100%
   );
   animation: animate 25s linear infinite;
   bottom: -150px;
